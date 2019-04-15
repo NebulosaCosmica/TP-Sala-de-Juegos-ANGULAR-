@@ -1,78 +1,45 @@
 <app-cabecera>  </app-cabecera>
 
+<div class="container">
+
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a class="navbar-brand" href="#"><strong>Menú Principal</strong> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a routerLink="/Juegos" class="btn btn-outline-primary">Juegos</a>
+                  <!-- <a class="nav-link" href="#">Juegos<span class="sr-only">(current)</span></a> -->
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/Jugadores" class="btn btn-outline-primary" >Jugadores</a>
+                </li>
+
+                <li class="nav-item">
+                    <a routerLink="/Listado" class="btn btn-outline-primary" href="#">Resultados</a>  
+                  </li>
+
+                  <li class="nav-item">
+                      <a routerLink="" class="btn btn-outline-primary" href="#">Configuración</a>
+                    </li>               
+              </ul>              
+            </div>
+          </nav>
+  
+    <footer class="blog-footer">
+
+        <nav class="nav d-flex justify-content-center">
+
+            <a routerLink="/QuienSoy" class="p-2 text-dark" ><span class="glyphicon glyphicon-user"></span><strong>Ariel David Cuevas</strong></a>
+            <a class="p-2 text-dark" href="https://github.com/NebulosaCosmica"target="_blank"><span class="glyphicon glyphicon-user"></span>Ver mi github</a>                  
+
+        </nav>
 
 
- 
-<div class="container" >
-   
-    <ul class="list-group">
-        <li class="list-group-item list-group-item-danger">
-           
-                <div class="media-body">
-                    <div class="hero-text">
-                        <h4 >Menú Principal</h4>
-                    </div>
-                 </div>
-               
-             
-          </li>
-        <li class="list-group-item list-group-item-success">
-          <a routerLink="/Juegos">
-            <div class="media">
-              <div class="media-left">
-                    <img src="./assets/imagenes/saladejuegos.png" class="media-object imagenDeMenu" >
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Juegos</h4>
-                <p>El método lúdico es un conjunto de estrategias diseñadas para crear un ambiente de armonía en los estudiantes que están inmersos en el proceso de aprendizaje. Este método busca que los alumnos se apropien de los temas impartidos por los docentes utilizando el juego.</p>
-              </div>
-             
-            </div> 
-          </a>
-        </li>
-        <li class="list-group-item list-group-item-info">
-            <a routerLink="/Listado">
-              <div class="media">
-                  <div class="media-left">
-                      <img src="./assets/imagenes/listado.jpg" class="media-object imagenDeMenu" >
-                    </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Listados de resultados</h4>
-                  <p>Los listados de los resultados con ordenamiento y busqueda</p>
-                </div>
-                
-              </div> 
-            </a>
-          </li>
-        <li class="list-group-item list-group-item-warning">
-          <a routerLink="/Juegos">
-            <div class="media">
-                <div class="media-left">
-                    <img src="./assets/imagenes/Configuracion.png" class="media-object imagenDeMenu" >
-                  </div>
-              <div class="media-body">
-                <h4 class="media-heading">Configuraci&oacute;n</h4>
-                <p>Ajustes de la aplicacion y los métodos de autentificación</p>
-              </div>
-             
-            </div> 
-          </a>
-        </li>
-        <li class="list-group-item list-group-item-warning">
-          <a routerLink="/Jugadores">
-            <div class="media">
-                <div class="media-left">
-                    <img src="./assets/imagenes/jugadores.png" class="media-object imagenDeMenu" >
-                  </div>
-              <div class="media-body">
-                <h4 class="media-heading">Jugadores</h4>
-                <p>Listado de jugadores</p>
-              </div>
-             
-            </div> 
-          </a>
-        </li>
-       
-        
-      </ul>
-</div>
+    </footer>
+    
+
+  </div>

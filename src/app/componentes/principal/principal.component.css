@@ -1,13 +1,48 @@
-.imagenDeMenu{
-width: 80px;
-height: 70px;
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #100000;
+/* stylelint-disable selector-list-comma-newline-after */
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 3rem;
     }
+  }
+  
+  /* Pagination */
+  .blog-pagination {
+    margin-bottom: 4rem;
+  }
+  .blog-pagination > .btn {
+    border-radius: 2rem;
+  }
+  
+  
+  /*
+   * Footer
+   */
+  .blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+    background:  rgb(177, 146, 167);
+    
+  }
+  .blog-footer p:last-child {
+    margin-bottom: 0;
+  }
+
+  .navbar {
+    margin-bottom: 20px;
+    background: rgb(228, 193, 217);
+  }
+  
+  ul li .btn{
+    border-radius: 2rem;
+  }
