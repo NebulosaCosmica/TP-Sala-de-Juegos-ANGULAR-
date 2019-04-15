@@ -12,16 +12,6 @@
       font-size: 3rem;
     }
   }
-  
-  /* Pagination */
-  .blog-pagination {
-    margin-bottom: 4rem;
-  }
-  .blog-pagination > .btn {
-    border-radius: 2rem;
-  }
-  
-  
   /*
    * Footer
    */
@@ -30,8 +20,8 @@
     color: #999;
     text-align: center;
     background-color: #f9f9f9;
-    border-top: .05rem solid #e5e5e5;
     background:  rgb(177, 146, 167);
+    /* border-top: .05rem solid #e5e5e5;*/
     
   }
   .blog-footer p:last-child {
@@ -42,7 +32,19 @@
     margin-bottom: 20px;
     background: rgb(228, 193, 217);
   }
+
+  .navbar button {   
+    border: 0;
+  }
   
   ul li .btn{
     border-radius: 2rem;
+    border-color: rgb(106, 141, 106);
+    color:  rgb(106, 141, 106);
+  }
+
+  ul li .btn:hover{
+   
+   background:  rgb(106, 141, 106);
+    color:  white;
   }

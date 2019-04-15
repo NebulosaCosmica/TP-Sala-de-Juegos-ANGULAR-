@@ -4,26 +4,27 @@
 
         <nav class="navbar navbar-expand-md navbar-light ">
             <a class="navbar-brand" href="#"><strong>Menú Principal</strong> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenuPrincipal" aria-controls="navbarMenuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarsExample03">
+            <div class="collapse navbar-collapse" id="navbarMenuPrincipal">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a routerLink="/Juegos" class="btn btn-outline-primary">Juegos</a>
+                <li class="nav-item">
+                  <!-- <li class="nav-item active"> -->
+                    <a routerLink="/Juegos" class="btn btn-outline-primary nav-link">Juegos</a>
                   <!-- <a class="nav-link" href="#">Juegos<span class="sr-only">(current)</span></a> -->
                 </li>
                 <li class="nav-item">
-                    <a routerLink="/Jugadores" class="btn btn-outline-primary" >Jugadores</a>
+                    <a routerLink="/Jugadores" class="btn btn-outline-primary nav-link" >Jugadores</a>
                 </li>
 
                 <li class="nav-item">
-                    <a routerLink="/Listado" class="btn btn-outline-primary" href="#">Resultados</a>  
+                    <a routerLink="/Listado" class="btn btn-outline-primary nav-link" href="#">Resultados</a>  
                   </li>
 
                   <li class="nav-item">
-                      <a routerLink="" class="btn btn-outline-primary" href="#">Configuración</a>
+                      <a routerLink="" class="btn btn-outline-primary nav-link" href="#">Configuración</a>
                     </li>               
               </ul>              
             </div>
@@ -34,7 +35,7 @@
         <nav class="nav d-flex justify-content-center">
 
             <a routerLink="/QuienSoy" class="p-2 text-dark" ><span class="glyphicon glyphicon-user"></span><strong>Ariel David Cuevas</strong></a>
-            <a class="p-2 text-dark" href="https://github.com/NebulosaCosmica"target="_blank"><span class="glyphicon glyphicon-user"></span>Ver mi github</a>                  
+            <a class="p-2 text-dark" href="https://github.com/NebulosaCosmica"target="_blank"><span class="glyphicon glyphicon-user"></span>ver mi github</a>                  
 
         </nav>
 
