@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuienSoyComponent implements OnInit {
 
+  siNavega: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
+
+redirige(): void{
+  this.siNavega = true;
+}
 
 }

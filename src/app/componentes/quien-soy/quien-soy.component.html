@@ -4,9 +4,9 @@
       <div class="inner">
         <h3 class="masthead-brand">¡¿Quién?!</h3>
         <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link" routerLink="./">Ariel</a>
-          <a class="nav-link" routerLink="./">Programación</a>
-          <a class="nav-link" routerLink="./">UTN-FRA</a>
+          <a class="nav-link" routerLink="QuienAriel" (click)="redirige()">Ariel</a>
+          <a class="nav-link" routerLink="QuienProg">Programación</a>
+          <a class="nav-link" routerLink="QuienUtn">UTN-FRA</a>
           <a class="nav-link" routerLink="../Principal" >Volver</a>
         </nav>
       </div>
@@ -14,10 +14,13 @@
   
     <main role="main" class="inner cover">
       <!-- 
-        *ngIf
-        routing para las otras pestañas
 
+        Ajustar las fotos para que queden piola
+        
+        ver un estilo de parraf con onda
         estilo al párrafo
+
+        completar los componentes routeados
 
         botón leer más
 
@@ -25,27 +28,33 @@
 
         limpiar lo comentado html y css
 
-       -->
+       -->       
+       
+      <div *ngIf="siNavega" class="container">
+        <router-outlet></router-outlet>  
+      </div>      
+
+      <div *ngIf = "!siNavega" class="container">
       <h1 class="cover-heading">Enfoque Biológico</h1>
       <div class="container">
-
-        <img class="img-responsive"src="../../../assets/imagenes/si_mismo.jpg" alt="si_mismo.jpg">
+        <img class="img-fluid img-thumbnail img-responsive"src="../../../assets/imagenes/si_mismo.jpg" alt="si_mismo.jpg">
       </div>
-      <p class="lead">Existen dudas acerca de qué partes de nuestro cerebro nos permiten poseer autoconocimiento y como es que estamos programados de forma biológica para esto.</p>
+      <p class="lead blog-post-title">Existen dudas acerca de qué partes de nuestro cerebro nos permiten poseer autoconocimiento y como es que estamos programados de forma biológica para esto.</p>
       <p class="lead">
         <a href="https://es.wikipedia.org/wiki/Autoconocimiento" class="btn btn-lg btn-secondary" target="_blank">Ver más</a>
       </p>
-    </main>
-  </div>
-  <!--  
+    </div>
+  </main>
+</div>
 
-  
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      </div>
-    </footer>
-  
+
+<footer class="mastfoot mt-auto">
+  <div class="inner">
+    <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  </div>
+</footer>
+
+<!--  
   
   <nav class="navbar navbar-default">
     <div class="container">
