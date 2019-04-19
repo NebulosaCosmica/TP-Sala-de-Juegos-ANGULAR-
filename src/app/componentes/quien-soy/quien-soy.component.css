@@ -10,7 +10,7 @@
   border: .05rem solid #fff;
 }*/
 
-.btn-lg{
+.btn-warning{
   color: orangered;
   margin-top: 1rem;
 }
@@ -134,15 +134,15 @@ p {font-size: 16px;}
     color: #1abc9c !important;
 }
 
-.blog-post-title {
-  margin-bottom: .25rem;
-  font-size: 1.5rem;
-}
-
 @media (min-width: 768px) {
   img{
     height: 20rem
   }
+
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 1.5rem;
 }
 
 .blog-footer {

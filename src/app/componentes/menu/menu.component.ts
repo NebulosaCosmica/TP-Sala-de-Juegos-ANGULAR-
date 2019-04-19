@@ -14,6 +14,12 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  focoArriba(): void{
+  
+    document.documentElement.scrollTop = 0;
+  }
+  
+
   Juego(tipo: string) {
     switch (tipo) {
       case 'Adivina':

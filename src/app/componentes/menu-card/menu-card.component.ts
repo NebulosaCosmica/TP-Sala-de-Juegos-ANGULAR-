@@ -7,16 +7,25 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class MenuCardComponent implements OnInit {
 
+  //menuJuegos:boolean =false;
   constructor(private route: ActivatedRoute,
     private router: Router) { }
 
 
   ngOnInit() {
   }
+
+  focoArriba(): void{
+  
+    document.documentElement.scrollTop = 0;
+  }
+  
+
   Juego(tipo: string) {
     switch (tipo) {
       case 'Adivina':
           this.router.navigate(['/Juegos/Adivina']);
+        //  this.menuJuegos=true;
         break;
       case 'Agilidad':
           this.router.navigate(['/Juegos/Agilidad']);
