@@ -1,24 +1,31 @@
 
-/* Custom default button */
+/* Custom default button 
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none;*/ /* Prevent inheritance from `body` */
+  /*
   background-color: #fff;
   border: .05rem solid #fff;
+}*/
+
+.btn-lg{
+  color: orangered;
+  margin-top: 1rem;
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 42em;  
 }
-
 
 /*
  * Header
  */
 .masthead {
-  margin-bottom: 2rem;
+  margin-bottom: rem;
+
+  padding-bottom: 1rem;
 
   border-bottom: #2f2f2f;
 }
@@ -66,6 +73,8 @@
  */
 .cover {
   padding: 0 1.5rem;  
+
+  color: orangered;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -125,14 +134,24 @@ p {font-size: 16px;}
     color: #1abc9c !important;
 }
 
-.blog-title {
-  margin-bottom: 0;
-  font-size: 2rem;
-  font-weight: 400;
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
   img{
     height: 20rem
   }
+}
+
+.blog-footer {
+  padding: 2.5rem 0;
+  color: grey;  
+  text-align: center;
+  background-color:  rgb(247, 206, 213);
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;  
 }

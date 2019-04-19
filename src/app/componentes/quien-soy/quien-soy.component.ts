@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuienSoyComponent implements OnInit {
 
+
   siNavega: boolean = false;
   constructor() { }
 
@@ -15,6 +16,11 @@ export class QuienSoyComponent implements OnInit {
 
 redirige(): void{
   this.siNavega = true;
+}
+
+focoArriba(): void{
+  
+  document.documentElement.scrollTop = 0;
 }
 
 }

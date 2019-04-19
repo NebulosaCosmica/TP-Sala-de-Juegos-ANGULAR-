@@ -134,3 +134,10 @@
       height: 20rem
     }
   }
+
+  
+
+  .blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 1.5rem;
+  }

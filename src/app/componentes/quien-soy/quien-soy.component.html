@@ -1,5 +1,5 @@
   
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" >
     <header class="masthead mb-auto">
       <div class="inner">
         <h3 class="masthead-brand">¡¿Quién?!</h3>
@@ -12,22 +12,9 @@
       </div>
     </header>
   
-    <main role="main" class="inner cover">
+    <main role="main" class="inner cover shadow-lg p-3 mb-5 rounded">
       <!-- 
-
-        Ajustar las fotos para que queden piola
-        
-        ver un estilo de parraf con onda
-        estilo al párrafo
-
-        completar los componentes routeados
-
-        botón leer más
-
-        footer
-
         limpiar lo comentado html y css
-
        -->       
        
       <div *ngIf="siNavega" class="container">
@@ -35,22 +22,29 @@
       </div>      
 
       <div *ngIf = "!siNavega" class="container">
-      <h1 class="cover-heading">Enfoque Biológico</h1>
-      <div class="container">
-        <img class="img-fluid img-thumbnail img-responsive"src="../../../assets/imagenes/si_mismo.jpg" alt="si_mismo.jpg">
-      </div>
+
+        <!-- centrar las fotos con columnas -->
+        <!-- <div class="row col-lg-4"> -->
+
+        
+        <h1 class="cover-heading font-italic">Enfoque Biológico</h1>
+        <div class="container">
+          <img class="img-fluid img-thumbnail img-responsive"src="../../../assets/imagenes/si_mismo.jpg" alt="si_mismo.jpg">
+        </div>
+      <!-- </div> -->
       <p class="lead blog-post-title">Existen dudas acerca de qué partes de nuestro cerebro nos permiten poseer autoconocimiento y como es que estamos programados de forma biológica para esto.</p>
       <p class="lead">
-        <a href="https://es.wikipedia.org/wiki/Autoconocimiento" class="btn btn-lg btn-secondary" target="_blank">Ver más</a>
+        <a href="https://es.wikipedia.org/wiki/Autoconocimiento" class="btn btn-lg btn-warning" target="_blank">Ver más</a>
       </p>
     </div>
   </main>
 </div>
 
 
-<footer class="mastfoot mt-auto">
-  <div class="inner">
-    <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+<footer class="mastfoot mt-auto blog-footer">
+  <div class="inner">   
+    <h6>Trabajo práctico de <strong> Ariel David Cuevas </strong> para Laboratorio IV UTN-FRA 2019</h6>   
+     <button class="btn btn-lg btn-warning" (click)="focoArriba()">Subir bien arriba</button>
   </div>
 </footer>
 
