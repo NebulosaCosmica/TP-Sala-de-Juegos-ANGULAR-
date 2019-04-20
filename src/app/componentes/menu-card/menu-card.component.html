@@ -1,6 +1,6 @@
-<main role="main">
+<main role="main " class="container">
 
-  <div id="calesitaDeJuegos" class="carousel slide" data-ride="carousel">
+  <div id="calesitaDeJuegos" class="carousel slide shadow-lg img-thumbnail" data-ride="carousel">
 
     <ol class="carousel-indicators">
       <li data-target="#calesitaDeJuegos" data-slide-to="0" class="active"></li>
@@ -14,7 +14,7 @@
       <div class="carousel-item active">    
 
         <div class="row">
-          <div class="col-lg-4"></div>
+          <div class="col-4"></div>
 
           <div class="container col ">
             <img class="img-thumbnail img-fluid img-responsive" src="../../../assets/imagenes/termometro.jpg" alt="">
@@ -22,33 +22,32 @@
 
         </div>
         
-        <div class="container text-center">
+        <div class="container text-center textoAdentro">
 
               <h1> Medidor de Empatía Animal</h1>
-              <p class="title">Juego Educativo</p>
+              <p>Juego Educativo</p>
 
-              <p><a class="btn btn-lg btn-primary" role="button">Jugar</a></p>           
+              <p><a class="btn btn-lg btn-info" role="button" (click)="Juego('TermometroVegano')">Jugar</a></p>           
 
             </div>
             </div>  
 
             <div class="carousel-item ">
     
-                <div class="container row">
-        
-                  <div class="container col-lg-1"></div>
+                <div class="container row">                         
                  
-                  <div class="container col-lg-6">
+                  <div class="container col-6 ">
+                  <span class="espaciado"></span>
                       <img class="img-thumbnail img-fluid img-responsive" src="../../../assets/imagenes/adivina_numero.jpg">
 
                   </div>
 
                 </div>  
-                <div class="container text-center">
-                      <h1>Adivina el número secreto</h1>
-                      <p class="title">Juega de estrategia</p>
+                <div class="container text-center textoAdentro">
+                      <h1 >Adiviná el Número Secreto</h1>
+                      <p class="title">Juega de Estrategia</p>
                      
-                      <p><a class="btn btn-lg btn-primary" role="button"(click)="Juego('Adivina')">Jugar</a></p>    
+                      <p><a class="btn btn-lg btn-info" role="button"(click)="Juego('Adivina')">Jugar</a></p>    
                       <!-- <p>           <button class="button"  (click)="Juego('Adivina')">Jugar</button></p>                              -->
                       
                   </div>
@@ -59,7 +58,7 @@
     
           <div class="container row">
   
-            <div class="container col-lg-4"></div>
+            <div class="container col-4"></div>
            
             <div class="container col">
   
@@ -67,11 +66,11 @@
 
             </div>
 
-            <div class="container text-center">
+            <div class="container text-center textoAdentro">
                 <h1>Velocidad y agilidad aritmética </h1>
                 <p class="title">Juego de agilidad mental</p>
   
-                <p><a class="btn btn-lg btn-primary" role="button"(click)="Juego('Agilidad')">Jugar</a></p>           
+                <p><a class="btn btn-lg btn-info" role="button"(click)="Juego('Agilidad')">Jugar</a></p>           
   
             </div>
 
@@ -81,20 +80,19 @@
       <div class="carousel-item ">
     
           <div class="container row">
-  
-            <div class="container col-lg-2"></div>
            
-            <div class="container col-lg-6"> 
+            <div class="container col-6">
+                <span class="espaciado"></span> 
                 <img class="img-thumbnail img-fluid img-responsive" src="../../../assets/imagenes/cuatro_elementos.jpg" alt="">
             </div>
 
-            <div class="container text-center">
+            <div class="container text-center textoAdentro">
 
             
                 <h1>Piedra Papel o Tijera</h1>
                 <p class="title">Juega contra la máquina</p>               
                
-                <p><a class="btn btn-lg btn-primary" role="button"(click)="Juego('PPT')">Jugar</a></p>        
+                <p><a class="btn btn-lg btn-info" role="button"(click)="Juego('PPT')">Jugar</a></p>        
   
               </div>
               </div>  

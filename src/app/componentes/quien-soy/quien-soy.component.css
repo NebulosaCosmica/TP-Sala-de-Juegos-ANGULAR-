@@ -155,3 +155,16 @@ p {font-size: 16px;}
 .blog-footer p:last-child {
   margin-bottom: 0;  
 }
+
+.container {
+    
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.fondo{ 
+
+  background-image: linear-gradient( rgb(245, 227, 205),rgb(201, 155, 99));
+
+}

@@ -56,6 +56,7 @@ import { SexoPipe } from './pipes/sexo.pipe';
 import { QuienArielComponent } from './componentes/quien-ariel/quien-ariel.component';
 import { QuienProgComponent } from './componentes/quien-prog/quien-prog.component';
 import { QuienUtnComponent } from './componentes/quien-utn/quien-utn.component';
+import { TermometroPrincipalComponent } from './componentes/termometro-principal/termometro-principal.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { QuienUtnComponent } from './componentes/quien-utn/quien-utn.component';
     SexoPipe,
     QuienArielComponent,
     QuienProgComponent,
-    QuienUtnComponent
+    QuienUtnComponent,
+    TermometroPrincipalComponent
   ],
   imports: [
     BrowserModule,

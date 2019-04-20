@@ -8,6 +8,8 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
+  volverAJuegos: boolean= true;
+
   constructor(private route: ActivatedRoute,
     private router: Router) { }
 

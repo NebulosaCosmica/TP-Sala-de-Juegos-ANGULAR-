@@ -56,9 +56,6 @@ img {
     transform: translateY(4px);
   }
 
-  /* GLOBAL STYLES
--------------------------------------------------- */
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -121,4 +118,57 @@ img {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;  
+}
+
+/*.carousel-control-prev, .carousel-control-next {
+
+  
+  background: maroon;
+} */
+
+.container {
+    
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.carousel{
+
+  background-image: linear-gradient( rgb(211, 188, 160),rgb(182, 140, 90));
+  
+}
+
+.carousel-item{
+  margin-top: 1rem;
+}
+
+
+
+.textoAdentro {
+  font-size: 2.5rem;
+
+  color: rgb(97, 0, 97);
+
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .textoAdentro {
+    font-size: 3rem;
+  }
+}
+
+p{
+  font-size: 1.5rem;
+}
+
+.espaciado{
+ margin-right: 2rem;
+}
+
+.btn-info{
+  color: rgb(97, 0, 97);
+  font-size: 1.5rem;
+  font-size-adjust: initial;
 }

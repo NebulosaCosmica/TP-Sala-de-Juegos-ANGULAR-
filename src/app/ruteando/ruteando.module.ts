@@ -26,6 +26,8 @@ import { QuienArielComponent } from '../componentes/quien-ariel/quien-ariel.comp
 import { QuienProgComponent } from '../componentes/quien-prog/quien-prog.component';
 import { QuienUtnComponent } from '../componentes/quien-utn/quien-utn.component';
 
+import { TermometroPrincipalComponent } from '../componentes/termometro-principal/termometro-principal.component';
+
 
 // declaro donde quiero que se dirija
 const MiRuteo = [
@@ -54,7 +56,9 @@ children:
      {path: 'Adivina' , component: AdivinaElNumeroComponent},
       {path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
       {path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent},
-      {path: 'Agilidad' , component: AgilidadAritmeticaComponent}]
+      {path: 'Agilidad' , component: AgilidadAritmeticaComponent},
+      {path: 'Termometro' , component: TermometroPrincipalComponent}
+    ]
 },
 {path: '**' , component: ErrorComponent},
 {path: 'error' , component: ErrorComponent}];
