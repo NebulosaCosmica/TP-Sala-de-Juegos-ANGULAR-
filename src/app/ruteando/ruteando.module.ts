@@ -28,6 +28,7 @@ import { QuienUtnComponent } from '../componentes/quien-utn/quien-utn.component'
 
 import { TermometroPrincipalComponent } from '../componentes/termometro-principal/termometro-principal.component';
 
+import { AnagramaComponent } from '../componentes/anagrama/anagrama.component';
 
 // declaro donde quiero que se dirija
 const MiRuteo = [
@@ -57,7 +58,8 @@ children:
       {path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
       {path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent},
       {path: 'Agilidad' , component: AgilidadAritmeticaComponent},
-      {path: 'Termometro' , component: TermometroPrincipalComponent}
+      {path: 'Termometro' , component: TermometroPrincipalComponent},
+      {path: 'Anagrama' , component: AnagramaComponent}  
     ]
 },
 {path: '**' , component: ErrorComponent},

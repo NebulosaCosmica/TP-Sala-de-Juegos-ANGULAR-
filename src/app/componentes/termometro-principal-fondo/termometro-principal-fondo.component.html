@@ -1,0 +1,101 @@
+<div class="container shadow-lg">
+  <!-- <img src="../../../assets/imagenes/termometro_fondo.jpg" class="img-thumbnail img-fluid img-responsive"alt="Fondo"> -->
+
+  <div *ngIf="cambioDePantalla==1;" class="container">
+  
+    <h1>Bienvenide</h1>
+    <p> En este juego de preguntas y respuestas intentamos reflexionar sobre el rol de los animales en nuestra sociedad y de forma simbólica medir cuán despierta está nuestra capacidad de ser empáticos con elles.</p>
+    <p class="font-italic"> "Cuando un individuo consigue sentir el dolor o el sufrimiento de los demás animales, poniéndose en su lugar, despierta el deseo de ayudar y actuar siguiendo los principios morales desde el lugar que le corresponde."</p>
+
+    <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Comenzar</a></p>   
+
+  </div>
+
+  <div *ngIf="cambioDePantalla==2;" class="container">
+  
+      <h1>Tutorial</h1>
+      <p> Aquí aparecerá una indicación o una pregunta, por ejemplo: </p>
+      <p class="font-italic"> De las siguientes opciones, seleccione un animal:</p>
+  
+      <div class="container">
+      
+        <div class="container opciones custom-control-inline">
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="unoVaca" name="grupoDeRespuestas">
+                <label class="custom-control-label" for="unoVaca" >1) Vaca</label>
+              </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="dosPerro" name="grupoDeRespuestas">
+                  <label class="custom-control-label" for="dosPerro" >2) Perro</label>
+                </div>
+            
+
+        </div>
+
+        <div class="container opciones custom-control-inline">
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="tresGallina" name="grupoDeRespuestas">
+                <label class="custom-control-label" for="tresGallina" >3) Gallina</label>
+              </div>
+        
+              <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="cuatroLoro" name="grupoDeRespuestas">
+                  <label class="custom-control-label" for="cuatroLoro" >4) Loro</label>
+                </div>
+        
+
+          </div>
+        
+          <p> Una vez señalada la elección, para confirmar deberás apretar el botón que está debajo.</p>
+          <p>Si es correcta, el medidor subirá y pasarás a la siguiente pregunta. De otra forma, el juego termina y se mostrará el resultado final.</p>
+      
+      <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Enviar respuesta</a></p>   
+  
+    </div>
+  </div>  
+    
+    <div *ngIf="cambioDePantalla==3;" class="container">
+        <h1>Pregunta Uno</h1>
+        <p class="font-italic"> De las siguientes opciones, seleccione un animal destinado al consumo humano:</p>
+  
+      <div class="container">
+      
+        <div class="container opciones custom-control-inline">
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="unoPez" name="grupoDeRespuestas">
+                <label class="custom-control-label" for="unoPez" >1) Pez</label>
+              </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="dosGato" name="grupoDeRespuestas">
+                  <label class="custom-control-label" for="dosGato" >2) Gato</label>
+                </div>
+            
+
+        </div>
+
+        <div class="container opciones custom-control-inline">
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" id="tresCerdo" name="grupoDeRespuestas">
+                <label class="custom-control-label" for="tresCerdo" >3) Cerdo</label>
+              </div>
+        
+              <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="cuatroCaballo" name="grupoDeRespuestas">
+                  <label class="custom-control-label" for="cuatroCaballo" >4) Caballo</label>
+                </div>
+        
+
+          </div>
+        
+          <p> Una vez señalada la elección, para confirmar deberás apretar el botón que está debajo.</p>          
+      
+      <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Enviar respuesta</a></p>   
+  
+    </div>
+    </div>
+
+    <div *ngIf="cambioDePantalla==4;" class="container">
+        <h2>Perdiste!... o ganaste, no sé.</h2>
+    </div>
+
+</div>

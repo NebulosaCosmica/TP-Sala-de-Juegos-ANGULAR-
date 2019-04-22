@@ -1,0 +1,18 @@
+
+
+.container{
+   /* background-image: url('../../../assets/imagenes/termometro_fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    */
+    padding-bottom: 0.25rem;
+
+}
+
+.opciones{
+
+    justify-content: space-between;
+
+}

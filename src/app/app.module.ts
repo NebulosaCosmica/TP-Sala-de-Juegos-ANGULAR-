@@ -53,10 +53,12 @@ import { MapaDeGoogleComponent } from './componentes/mapa-de-google/mapa-de-goog
 import { AgmCoreModule } from '@agm/core';
 import { InputJugadoresComponent } from './componentes/input-jugadores/input-jugadores.component';
 import { SexoPipe } from './pipes/sexo.pipe';
+
 import { QuienArielComponent } from './componentes/quien-ariel/quien-ariel.component';
 import { QuienProgComponent } from './componentes/quien-prog/quien-prog.component';
 import { QuienUtnComponent } from './componentes/quien-utn/quien-utn.component';
 import { TermometroPrincipalComponent } from './componentes/termometro-principal/termometro-principal.component';
+import { TermometroPrincipalFondoComponent } from './componentes/termometro-principal-fondo/termometro-principal-fondo.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +88,8 @@ import { TermometroPrincipalComponent } from './componentes/termometro-principal
     QuienArielComponent,
     QuienProgComponent,
     QuienUtnComponent,
-    TermometroPrincipalComponent
+    TermometroPrincipalComponent,
+    TermometroPrincipalFondoComponent
   ],
   imports: [
     BrowserModule,

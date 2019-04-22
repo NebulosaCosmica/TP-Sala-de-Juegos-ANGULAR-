@@ -38,6 +38,10 @@ export class MenuCardComponent implements OnInit {
         break;
       case 'TermometroVegano':
         this.router.navigate(['/Juegos/Termometro']);
+        break;
+      case 'Anagrama':
+      this.router.navigate(['/Juegos/Anagrama']);
+      break;
     }
   }
 }
