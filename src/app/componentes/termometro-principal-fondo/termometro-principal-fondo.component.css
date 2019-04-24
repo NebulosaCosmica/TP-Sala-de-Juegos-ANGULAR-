@@ -9,10 +9,67 @@
     */
     padding-bottom: 0.25rem;
 
+    background: rgba(181, 221, 122, 0.829);
+
 }
 
 .opciones{
 
+    box-sizing: border-box;
     justify-content: space-between;
 
+}
+
+.blog-post-title {
+    margin-bottom: .25rem;
+    font-size: 1.5rem;
+  }
+
+.btn-success{
+    background-color: rgba(4, 209, 4, 0.87);
+}
+
+.btn-success:hover, .btn-success:focus{
+    background-color: rgb(16, 168, 16);
+}
+
+.recuadro{
+
+    border: solid 0.5rem;
+
+    border-color: black;
+
+    width: 100%;
+    
+    font-size: 1.25rem;
+
+    
+}
+
+.espaciado{
+    margin: 0 0.1rem;
+}
+
+.custom-control-label:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+@media(max-width: 540px){
+    .recuadro{
+
+        
+        border-color: black;
+        
+        width: 100%;
+        
+        font-size: 1rem;
+        
+        box-sizing: border-box;
+
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border: solid 0.25rem;
+    }
 }

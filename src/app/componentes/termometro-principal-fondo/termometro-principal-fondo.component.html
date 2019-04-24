@@ -1,25 +1,30 @@
+
 <div class="container shadow-lg">
   <!-- <img src="../../../assets/imagenes/termometro_fondo.jpg" class="img-thumbnail img-fluid img-responsive"alt="Fondo"> -->
 
   <div *ngIf="cambioDePantalla==1;" class="container">
   
-    <h1>Bienvenide</h1>
-    <p> En este juego de preguntas y respuestas intentamos reflexionar sobre el rol de los animales en nuestra sociedad y de forma simbólica medir cuán despierta está nuestra capacidad de ser empáticos con elles.</p>
-    <p class="font-italic"> "Cuando un individuo consigue sentir el dolor o el sufrimiento de los demás animales, poniéndose en su lugar, despierta el deseo de ayudar y actuar siguiendo los principios morales desde el lugar que le corresponde."</p>
+    <h1 class="p-4">Bienvenide</h1>    
+    <p class="p-4 blog-post-title"> En este juego de <b>preguntas y respuestas</b>  intentamos reflexionar sobre el rol de los animales en nuestra sociedad y de forma simbólica medir cuán despierta está nuestra capacidad de ser empáticos con elles.</p>
+    <p class="font-italic p-4"> "Cuando un individuo consigue sentir el dolor o el sufrimiento de los demás animales, poniéndose en su lugar, despierta el deseo de ayudar y actuar siguiendo los principios morales desde el lugar que le corresponde."</p>
 
-    <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Comenzar</a></p>   
+    <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Empezar</a></p>   
 
   </div>
 
   <div *ngIf="cambioDePantalla==2;" class="container">
   
-      <h1>Tutorial</h1>
-      <p> Aquí aparecerá una indicación o una pregunta, por ejemplo: </p>
-      <p class="font-italic"> De las siguientes opciones, seleccione un animal:</p>
+      <h1 class="p-4">Aprendé a jugar</h1>
+      <p class="blog-post-title"> Aquí aparecerá una indicación o una pregunta, por ejemplo: </p>
+      <p class="p-4 blog-post-title font-italic"> De las siguientes opciones, seleccione un animal:</p>
+
+      <div class="container">     
   
-      <div class="container">
+        <div class="container recuadro blog-post-title">
+
+
       
-        <div class="container opciones custom-control-inline">
+        <div class="container opciones custom-control-inline p-4">
             <div class="custom-control custom-radio">
                 <input type="radio" class="custom-control-input" id="unoVaca" name="grupoDeRespuestas">
                 <label class="custom-control-label" for="unoVaca" >1) Vaca</label>
@@ -32,7 +37,7 @@
 
         </div>
 
-        <div class="container opciones custom-control-inline">
+        <div class="container opciones custom-control-inline p-4">
             <div class="custom-control custom-radio">
                 <input type="radio" class="custom-control-input" id="tresGallina" name="grupoDeRespuestas">
                 <label class="custom-control-label" for="tresGallina" >3) Gallina</label>
@@ -40,52 +45,57 @@
         
               <div class="custom-control custom-radio">
                   <input type="radio" class="custom-control-input" id="cuatroLoro" name="grupoDeRespuestas">
-                  <label class="custom-control-label" for="cuatroLoro" >4) Loro</label>
+                  <label class="custom-control-label" for="cuatroLoro" > <span class="espaciado"></span> 4)<span class="espaciado"></span> Loro</label>
                 </div>
         
 
           </div>
-        
-          <p> Una vez señalada la elección, para confirmar deberás apretar el botón que está debajo.</p>
-          <p>Si es correcta, el medidor subirá y pasarás a la siguiente pregunta. De otra forma, el juego termina y se mostrará el resultado final.</p>
+        </div> 
+          <p class="blog-post-title"> Una vez señalada la elección, para confirmar deberás apretar el botón que está debajo.</p>
+          <p class="blog-post-title">Si es correcta, el medidor subirá y pasarás a la siguiente pregunta. De otra forma, el juego termina y se mostrará el resultado final.</p>
       
       <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Enviar respuesta</a></p>   
   
     </div>
   </div>  
+
+  <!-- Pregunta Uno -->
     
     <div *ngIf="cambioDePantalla==3;" class="container">
-        <h1>Pregunta Uno</h1>
-        <p class="font-italic"> De las siguientes opciones, seleccione un animal destinado al consumo humano:</p>
+        <h1  class="p-4">Pregunta Uno</h1>
+        <p class="p-4 blog-post-title font-italic"> De las siguientes opciones, seleccione un animal destinado al consumo humano:</p>
   
       <div class="container">
+
+        <div class="container recuadro blog-post-title">
       
-        <div class="container opciones custom-control-inline">
+          <div class="container opciones custom-control-inline p-4">
             <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" id="unoPez" name="grupoDeRespuestas">
+                <input  type="radio" [(ngModel)]= "respuesta" class="custom-control-input" id="unoPez" value= "Pez" name="grupoDeRespuestas">
                 <label class="custom-control-label" for="unoPez" >1) Pez</label>
               </div>
               <div class="custom-control custom-radio">
-                  <input type="radio" class="custom-control-input" id="dosGato" name="grupoDeRespuestas">
+                  <input [(ngModel)]= "respuesta" value= "Gato" type="radio" class="custom-control-input" id="dosGato" name="grupoDeRespuestas">
                   <label class="custom-control-label" for="dosGato" >2) Gato</label>
                 </div>
             
 
-        </div>
+          </div>
 
-        <div class="container opciones custom-control-inline">
+          <div class="container opciones custom-control-inline">
             <div class="custom-control custom-radio">
-                <input type="radio" class="custom-control-input" id="tresCerdo" name="grupoDeRespuestas">
+                <input [(ngModel)]= "respuesta" value= "Cerdo" type="radio" class="custom-control-input" id="tresCerdo" name="grupoDeRespuestas">
                 <label class="custom-control-label" for="tresCerdo" >3) Cerdo</label>
               </div>
         
               <div class="custom-control custom-radio">
-                  <input type="radio" class="custom-control-input" id="cuatroCaballo" name="grupoDeRespuestas">
+                  <input [(ngModel)]= "respuesta" value= "Caballo" type="radio" class="custom-control-input" id="cuatroCaballo" name="grupoDeRespuestas">
                   <label class="custom-control-label" for="cuatroCaballo" >4) Caballo</label>
                 </div>
         
 
-          </div>
+            </div>
+        </div>
         
           <p> Una vez señalada la elección, para confirmar deberás apretar el botón que está debajo.</p>          
       
@@ -95,7 +105,59 @@
     </div>
 
     <div *ngIf="cambioDePantalla==4;" class="container">
-        <h2>Perdiste!... o ganaste, no sé.</h2>
+        <h1  class="p-4">Pregunta Dos</h1>
+        <p class="p-4 blog-post-title font-italic"> De las siguientes opciones, seleccione un alimento que provenga de animales:</p>
+  
+      <div class="container">
+
+        <div class="container recuadro blog-post-title">
+      
+          <div class="container opciones custom-control-inline p-4">
+            <div class="custom-control custom-radio">
+                <input type="radio" [(ngModel)]= "respuesta" value= "Leche" class="custom-control-input" id="unoLeche" name="grupoDeRespuestas">
+                <label class="custom-control-label" for="unoLeche" >1) Leche</label>
+              </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" [(ngModel)]= "respuesta" value= "Manzanas" class="custom-control-input" id="dosManzanas" name="grupoDeRespuestas">
+                  <label class="custom-control-label" for="dosManzanas" >2) Manzanas</label>
+                </div>
+            
+
+          </div>
+
+          <div class="container opciones custom-control-inline">
+            <div class="custom-control custom-radio">
+                <input type="radio" [(ngModel)]= "respuesta" value= "Nueces" class="custom-control-input" id="tresNueces" name="grupoDeRespuestas">
+                <label class="custom-control-label" for="tresNueces" >3) Nueces</label>
+              </div>
+        
+              <div class="custom-control custom-radio">
+                  <input type="radio" [(ngModel)]= "respuesta" value= "Huevos" class="custom-control-input" id="cuatroHuevos" name="grupoDeRespuestas">
+                  <label class="custom-control-label" for="cuatroHuevos" >4) Huevos</label>
+                </div>
+        
+
+            </div>
+        </div>
+        
+          <p> Una vez señalada la elección, para confirmar deberás apretar el botón que está debajo.</p>          
+      
+      <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Enviar respuesta</a></p>   
+  
+    </div>
+    </div>
+
+    <div *ngIf="cambioDePantalla==5;" class="container">
+        <h2>ganaste.</h2>
+    </div>
+
+    <div *ngIf="cambioDePantalla==12;" class="container">
+        <h2>ganaste.</h2>
+    </div>
+
+
+    <div *ngIf="cambioDePantalla==13;" class="container">
+        <h2>Perdiste!...</h2>
     </div>
 
 </div>
