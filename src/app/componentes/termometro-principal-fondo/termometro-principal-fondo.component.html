@@ -24,7 +24,7 @@
 
 
       
-        <div class="container opciones custom-control-inline p-4">
+        <div class="container opciones custom-control-inline">
             <div class="custom-control custom-radio">
                 <input type="radio" class="custom-control-input" id="unoVaca" name="grupoDeRespuestas">
                 <label class="custom-control-label" for="unoVaca" >1) Vaca</label>
@@ -37,7 +37,7 @@
 
         </div>
 
-        <div class="container opciones custom-control-inline p-4">
+        <div class="container opciones custom-control-inline">
             <div class="custom-control custom-radio">
                 <input type="radio" class="custom-control-input" id="tresGallina" name="grupoDeRespuestas">
                 <label class="custom-control-label" for="tresGallina" >3) Gallina</label>
@@ -69,7 +69,7 @@
 
         <div class="container recuadro blog-post-title">
       
-          <div class="container opciones custom-control-inline p-4">
+          <div class="container opciones custom-control-inline ">
             <div class="custom-control custom-radio">
                 <input  type="radio" [(ngModel)]= "respuesta" class="custom-control-input" id="unoPez" value= "Pez" name="grupoDeRespuestas">
                 <label class="custom-control-label" for="unoPez" >1) Pez</label>
@@ -112,7 +112,7 @@
 
         <div class="container recuadro blog-post-title">
       
-          <div class="container opciones custom-control-inline p-4">
+          <div class="container opciones custom-control-inline">
             <div class="custom-control custom-radio">
                 <input type="radio" [(ngModel)]= "respuesta" value= "Leche" class="custom-control-input" id="unoLeche" name="grupoDeRespuestas">
                 <label class="custom-control-label" for="unoLeche" >1) Leche</label>
@@ -147,7 +147,95 @@
     </div>
     </div>
 
+    
+
     <div *ngIf="cambioDePantalla==5;" class="container">
+      <h1  class="p-4">Pregunta Tres</h1>
+      <p class="p-4 blog-post-title font-italic"> De las siguientes opciones, seleccione el factor por el cual se reconoce que un ser vivo puede sentir:</p>
+
+    <div class="container">
+
+      <div class="container recuadro blog-post-title">
+    
+        <div class="container opciones custom-control-inline ">
+          <div class="custom-control custom-radio">
+              <input type="radio" [(ngModel)]= "respuesta" value= "RespondeAEstimulos" class="custom-control-input" id="unoRespondeAEstimulos" name="grupoDeRespuestas">
+              <label class="custom-control-label" for="unoRespondeAEstimulos" >1) que responde a estímulos de su ambiente</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" [(ngModel)]= "respuesta" value= "Existe" class="acomodarRadio custom-control-input" id="dosExiste" name="grupoDeRespuestas">
+                <label class="custom-control-label" for="dosExiste" >2) que puede ser percibido y existe</label>
+              </div>
+          
+
+        </div>
+
+        <div class="container opciones custom-control-inline">
+          <div class="custom-control custom-radio">
+              <input type="radio" [(ngModel)]= "respuesta" value= "SNC" class="custom-control-input" id="tresSNC" name="grupoDeRespuestas">
+              <label class="custom-control-label" for="tresSNC" >3) que tiene un sistema nervioso centralizado</label>
+            </div>
+      
+            <div class="custom-control custom-radio">
+                <input type="radio" [(ngModel)]= "respuesta" value= "OrganosEspecializados" class="custom-control-input" id="cuatroOrganosEspecializados" name="grupoDeRespuestas">
+                <label class="custom-control-label" for="cuatroOrganosEspecializados" >4) que tiene órganos especializados</label>
+              </div>
+      
+
+          </div>
+      </div>
+      
+        <p> Una vez señalada la elección, para confirmar deberás apretar el botón que está debajo.</p>          
+    
+    <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Enviar respuesta</a></p>   
+
+  </div>
+  </div>
+
+  <div *ngIf="cambioDePantalla==6;" class="container">
+    <h1  class="p-4">Pregunta Cuatro</h1>
+    <p class="p-4 blog-post-title font-italic"> ¿Qué significa que un animal sienta?</p>
+
+  <div class="container">
+
+    <div class="container recuadro blog-post-title">
+  
+      <div class="container opciones custom-control-inline ">
+        <div class="custom-control custom-radio">
+            <input type="radio" [(ngModel)]= "respuesta" value= "DolorYPlacer" class="custom-control-input" id="unoDolorYPlacer" name="grupoDeRespuestas">
+            <label class="custom-control-label" for="unoDolorYPlacer" >1) que puede percibir dolor o placer</label>
+          </div>
+          <div class="custom-control custom-radio">
+              <input type="radio" [(ngModel)]= "respuesta" value= "Comida" class="acomodarRadio custom-control-input" id="dosComida" name="grupoDeRespuestas">
+              <label class="custom-control-label" for="dosComida" >2) que puede ser transformado en alimentos</label>
+            </div>
+        
+
+      </div>
+
+      <div class="container opciones custom-control-inline">
+        <div class="custom-control custom-radio">
+            <input type="radio" [(ngModel)]= "respuesta" value= "Someterlo" class="custom-control-input" id="tresSometerlo" name="grupoDeRespuestas">
+            <label class="custom-control-label" for="tresSometerlo" >3) que es posible enjaularlo y someterlo</label>
+          </div>
+    
+          <div class="custom-control custom-radio">
+              <input type="radio" [(ngModel)]= "respuesta" value= "InteresesIndividuales" class="custom-control-input" id="cuatroInteresesIndividuales" name="grupoDeRespuestas">
+              <label class="custom-control-label" for="cuatroInteresesIndividuales" >4) que posee intereses individuales y desea vivir</label>
+            </div>
+    
+
+        </div>
+    </div>
+    
+      <p> Una vez señalada la elección, para confirmar deberás apretar el botón que está debajo.</p>          
+  
+  <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Enviar respuesta</a></p>   
+
+</div>
+</div>
+
+    <div *ngIf="cambioDePantalla==7;" class="container">
         <h2>ganaste.</h2>
       <p><a class="btn btn-lg btn-success" role="button" (click)="cambiar()">Volver a Jugar</a></p>   
 

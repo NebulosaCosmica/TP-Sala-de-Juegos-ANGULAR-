@@ -19,7 +19,11 @@ export class TermometroPrincipalFondoComponent implements OnInit {
 
   cambiar(): void{
 
-    // validar seleccion, no seleccionada
+    //ojo con esta validacion
+   if(this.cambioDePantalla==7||this.cambioDePantalla==12||this.cambioDePantalla==13){
+     this.cambioDePantalla=3;
+   }
+
     if(this.respuesta==undefined && this.cambioDePantalla>2){
       console.log("Seleccionar algo");
       
@@ -44,6 +48,8 @@ export class TermometroPrincipalFondoComponent implements OnInit {
 
               this.cambioDePantalla++;
               }
+
+              this.respuesta=undefined;
               break;
       case 4:
               if(rta=="Manzanas" || rta== "Nueces"){
@@ -52,8 +58,29 @@ export class TermometroPrincipalFondoComponent implements OnInit {
 
                 this.cambioDePantalla++;
               } 
+
+              this.respuesta=undefined;
               break;
       case 5:
+              if(rta=="SNC"){
+                this.cambioDePantalla++;
+              }else{
+                this.cambioDePantalla=13;
+
+              } 
+              this.respuesta=undefined;
+              break;
+      case 6:
+              //seguir acá
+              if(rta=="DolorYPlacer"||rta=="InteresesIndividuales"){
+                this.cambioDePantalla++;
+              }else{
+                this.cambioDePantalla=13;
+
+              } 
+              this.respuesta=undefined;
+              break;
+      case 7:
               this.cambioDePantalla=3;
               this.respuesta=undefined;
               break;
@@ -67,6 +94,7 @@ export class TermometroPrincipalFondoComponent implements OnInit {
               break;
       default:
             this.cambioDePantalla++;
+            this.respuesta=undefined;
             break;
     }
     
