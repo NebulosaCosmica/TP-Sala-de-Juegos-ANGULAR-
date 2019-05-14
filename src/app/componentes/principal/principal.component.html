@@ -1,7 +1,10 @@
-<app-cabecera>  </app-cabecera>
 
-<div class="container flex-shrink-0">
 
+<app-cabecera [adentro]="ingresoAlguien">  </app-cabecera>
+
+<!-- <div *ngIf=ingresoAlguien class="container flex-shrink-0"> -->
+
+  <div class="container flex-shrink-0">
         <nav class="navbar navbar-expand-sm navbar-light ">
             <a class="navbar-brand" href="#"><strong>Menú Principal</strong> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenuPrincipal" aria-controls="navbarMenuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,17 +33,21 @@
             </div>
           </nav>
   
-    <footer class="blog-footer footer mt-auto py-3">
+          
+          
+</div>
 
-        <nav class="nav d-flex justify-content-center">
+<div class="container">
 
-            <a routerLink="/QuienSoy" class="p-2 text-dark" ><span class="glyphicon glyphicon-user"></span><strong>Ariel David Cuevas</strong></a>
-            <a class="p-2 text-dark" href="https://github.com/NebulosaCosmica"target="_blank"><span class="glyphicon glyphicon-user"></span>ver mi github</a>                  
+  <footer class="blog-footer footer mt-auto py-3">
 
-        </nav>
+      <nav class="nav d-flex justify-content-center">
+
+          <a routerLink="/QuienSoy" class="p-2 text-dark" ><span class="glyphicon glyphicon-user"></span><strong>Ariel David Cuevas</strong></a>
+          <a class="p-2 text-dark" href="https://github.com/NebulosaCosmica"target="_blank"><span class="glyphicon glyphicon-user"></span>ver mi github</a>                  
+
+      </nav>
 
 
-    </footer>
-    
-
-  </div>
+  </footer>
+</div>

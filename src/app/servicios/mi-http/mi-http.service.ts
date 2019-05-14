@@ -8,6 +8,13 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
+
+// se puede mejorar, con lo que necesite para el ABM
+
+// los servicios especificos deberian ser mas austeros
+
+// (con el JWT por ejemplo)
+
 @Injectable()
 export class MiHttpService {
 

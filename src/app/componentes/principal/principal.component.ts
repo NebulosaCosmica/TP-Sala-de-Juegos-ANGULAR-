@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+// puesto el ingreso alguien para cuando ande el logueo
+// ver el ngIf
 
 @Component({
   selector: 'app-principal',
@@ -11,6 +13,9 @@ export class PrincipalComponent implements OnInit {
     isFirstOpen: true,
     isFirstDisabled: false
   };
+
+  ingresoAlguien:boolean = false;
+
   constructor() {  }
 
   ngOnInit() {

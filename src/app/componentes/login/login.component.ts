@@ -1,18 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Validators, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 import {Subscription} from "rxjs";
 import {TimerObservable} from "rxjs/observable/TimerObservable";
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
+// falta el continuar
+
 export class LoginComponent implements OnInit {
 
-  private subscription: Subscription;
-  usuario = '';
-  clave= '';
+  private subscription: Subscription;  
+  
   progreso: number;
   progresoMensaje="esperando..."; 
   logeando=true;
@@ -22,19 +27,41 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router) {
+    private router: Router,
+    private builder: FormBuilder) {
       this.progreso=0;
       this.ProgresoDeAncho="0%";
 
   }
+  usuario= new FormControl('',[
+    Validators.required,
+    Validators.minLength(3)
+  ]);
+
+  clave= new FormControl('',[
+    Validators.required,
+    Validators.minLength(3)
+  ]); 
+
+  ingresoForm: FormGroup = this.builder.group({
+
+    usuario:this.usuario,
+    clave: this.clave
+    //copiaClave: this.copiaClave,
+  });
+
+  Ingresar(): void{
+    console.log("Adentro");
+  }
+
 
   ngOnInit() {
   }
 
   Entrar() {
-    if (this.usuario === 'admin' && this.clave === 'admin') {
+  //  if (this.usuario === 'admin' && this.clave === 'admin') {
       this.router.navigate(['/Principal']);
-    }
+    //}
   }
   MoverBarraDeProgreso() {
     
